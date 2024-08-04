@@ -201,9 +201,9 @@ main {
     border: 0.869px solid #000;
     background: #fff;
 
-    img {
+    button img {
       object-fit: fill; /* or contain, depending on your needs */
-      width: 88.036px;
+      width: 80px;
       height: 98.16px;
     }
   }
