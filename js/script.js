@@ -1,6 +1,6 @@
 const femalebtn = document.getElementById("femalebtn");
 const malebtn = document.getElementById("malebtn");
-const jacketChoices = document.querySelector(".jacket-choices")
+const jacketChoices = document.querySelector(".jacket-choices") /* jacket grid div */
 const productInfo = document.querySelector(".product-info");
 
 
@@ -42,11 +42,11 @@ femalebtn.addEventListener("click", () => {
     createProductList(genderFilter); /* tell the function to show the product list */
 })
 
-jacketChoices.addEventListener("click", (event) => {
+jacketChoices.addEventListener("click", (event) => { 
     const target = event.target.parentElement
     const id = target.id
     let oneProduct = allProducts.find( p => p.id === id) 
-    productDetails(oneProduct)
+    productDetails(oneProduct) /* returns div hero product details */
 })
 
 function createProductList(products) {
@@ -61,7 +61,7 @@ function createProductList(products) {
     
 }
 
-function productDetails(product) {
+function productDetails(product) { /* product is access through id */
     let sizeList = "";
     product.sizes.forEach(size => {
         sizeList += `
